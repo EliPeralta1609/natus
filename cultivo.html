@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultivo | Natus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="logo.svg" alt="Natus" style="width: 100px; height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cultivo.html">Cultivo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="decoracion.html">Decoración</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kits.html">Kits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <input type="text" class="form-control" placeholder="Buscar productos...">
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <div class="carrito-badge" id="btn-ver-carrito">
+                            <i class="fa-solid fa-shopping-cart"></i>
+                            <span id="carrito-contador">0</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <div class="container">
+
+            <h2 class="section-title mb-4">Cultivo</h2>
+
+            <div class="row">
+
+                <!-- FILTROS -->
+                <div class="col-md-3">
+                    <div class="p-4 bg-white rounded-4 shadow-sm">
+                        <h5 class="mb-4">Filtros</h5>
+
+                        <label class="fw-bold mb-2">Tipo</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Semillas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Sustratos</label>
+                        </div>
+
+                        <hr>
+
+                        <label class="fw-bold mb-2">Uso</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Interior</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Exterior</label>
+                        </div>
+
+                        <hr>
+
+                        <label class="fw-bold mb-2">Precio</label>
+                        <input class="form-control" placeholder="$0 Min - $1.000.000 Max">
+                    </div>
+                </div>
+
+                <!-- PRODUCTOS -->
+                <div class="col-md-9">
+                    <div class="row g-4">
+
+                        <!-- CARD 1 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card card-product">
+                                <div class="product-img"
+                                    style="background-image: url('https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=400'); background-size: cover; background-position: center;">
+                                    <span class="badge bg-secondary product-badge">Germinación 7-10 días</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="badge bg-light text-dark">Interior</span>
+                                        <span class="badge bg-light text-dark">Para inicio</span>
+                                        <span class="badge bg-light text-dark">7-10 días</span>
+                                    </div>
+
+                                    <h5>Semillas Huerta Urbana</h5>
+                                    <p class="text-muted mb-2">
+                                        Ideal para comenzar tu huerta en casa.
+                                    </p>
+                                    <h6>$24.900</h6>
+
+                                    <button class="btn btn-natus w-100 mt-2">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card card-product">
+                                <div class="product-img"
+                                    style="background-image: url('https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=400&fit=crop'); background-size: cover; background-position: center;">
+                                    <span class="badge bg-secondary product-badge">Eco</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="badge bg-light text-dark">Interior</span>
+                                        <span class="badge bg-light text-dark">Premium</span>
+                                        <span class="badge bg-light text-dark">1L</span>
+                                    </div>
+
+                                    <h5>Sustrato Premium 1L</h5>
+                                    <p class="text-muted mb-2">
+                                        Mezcla orgánica para mejor crecimiento.
+                                    </p>
+                                    <h6>$18.900</h6>
+
+                                    <button class="btn btn-natus w-100 mt-2">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card card-product">
+                                <div class="product-img"
+                                    style="background-image: url('https://images.unsplash.com/photo-1485955900519-e21cc028cb29?w=400&fit=crop'); background-size: cover; background-position: center;">
+                                    <span class="badge bg-secondary product-badge">Interior</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="badge bg-light text-dark">Interior</span>
+                                        <span class="badge bg-light text-dark">Maceta</span>
+                                        <span class="badge bg-light text-dark">Cerámica</span>
+                                    </div>
+
+                                    <h5>Maceta Inicial</h5>
+                                    <p class="text-muted mb-2">
+                                        Perfecta para germinación y crecimiento.
+                                    </p>
+                                    <h6>$32.900</h6>
+
+                                    <button class="btn btn-natus w-100 mt-2">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p class="mb-1">Natus - Naturalmente contigo</p>
+            <small>Contacto: info@natus.com</small>
+        </div>
+    </footer>
+
+    <!-- MODAL PRODUCTO -->
+    <div class="modal fade" id="modalProducto" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detalles del Producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-product-image">
+                        <i class="fa-solid fa-leaf" style="font-size: 60px; color: #2f6b45;"></i>
+                    </div>
+                    <div class="modal-product-info">
+                        <h4 id="modalProductoNombre">Nombre del producto</h4>
+                        <div class="modal-product-tags" id="modalProductoTags">
+                            <span class="badge bg-light text-dark">Tag</span>
+                        </div>
+                        <p id="modalProductoDescripcion" class="text-muted">Descripción del producto</p>
+                        <div class="modal-product-price" id="modalProductoPrecio">$0</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-agregar-modal">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARRITO -->
+    <div class="modal fade" id="modalCarrito" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tu Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="carritoContenido"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continuar comprando</button>
+                    <button type="button" class="btn btn-natus" onclick="procederAlPago()">Proceder al pago</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
